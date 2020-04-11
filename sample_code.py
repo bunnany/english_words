@@ -18,5 +18,5 @@ def check_word(words, word):
 
 
 def main():
-    ENGLISH_WORDS = load_words 
+    ENGLISH_WORDS = load_words() 
     print('machine' in ENGLISH_WORDS)
