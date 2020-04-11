@@ -14,9 +14,9 @@ def check_word(words, word):
     if word in words:
         return True
     else:
-        return false
+        return False
 
 
 def main():
-    ENGLISH_WORDS = load_words() 
+    ENGLISH_WORDS = load_words 
     print('machine' in ENGLISH_WORDS)
