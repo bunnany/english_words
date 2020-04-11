@@ -1,12 +1,12 @@
 ##
 # Sample code to use load_words.py
 
-import load_words
+import load_words as lw
 
 
 def load_words():
     """ Load a list of words to a list. """ 
-    return load_words.load_words()
+    return lw.load_words()
 
 
 def check_word(words, word):
@@ -18,5 +18,7 @@ def check_word(words, word):
 
 
 def main():
-    ENGLISH_WORDS = load_words 
-    print('machine' in ENGLISH_WORDS)
+    ENGLISH_WORDS = load_words()
+    word = input("Enter a word: ")
+    
+    print(word in ENGLISH_WORDS)
